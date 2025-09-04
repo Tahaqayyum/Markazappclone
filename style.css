@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Nunitoregular;
+    src: url(Fonts/Segoe\ UI.ttf);
+}
+@font-face {
+    font-family: Nunitobold;
+    src: url(Fonts/Segoe\ UI\ Bold.ttf);
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 5rem;
+    background-color: #F2F3F4;
+    height: 72px;
+    position: sticky;
+}
+.header img{
+    height: 35px;
+}
+.header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+.header nav ul li a{
+    text-decoration: none;
+    font-family: Nunitoregular;
+    font-size: 1.1rem;
+    color: #202020;
+}
+.header-btn{
+    background-color: #94ce5d;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 170px;
+    font-family: Nunitoregular;
+    font-size: 1rem;
+    line-height: 10px;
+}
+.header-btn:hover{
+    background-color: #a5df6f;
+    cursor: pointer;
+}
+.hamburger{
+    display: none;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F3F4;
+    padding: 50px 80px;
+}
+.hero-img img {
+    max-width: 100%;
+    height: auto;
+}
+.hero-text h1{
+    font-family: Nunitobold;
+    font-size: 2.5rem;
+}
+.hero-text p{
+    font-family: Nunitoregular;
+    font-size: 1.4rem;
+    color: #757575;
+}
+  
+.hero-app{
+    background-color: #94ce5d;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 170px;
+    font-family: Nunitoregular;
+    font-size: 1rem;
+    line-height: 10px;
+  
+}
+.hero-app:hover{
+    background-color: #a5df6f;
+    cursor: pointer;
+}
+.hero-visit{
+    background-color: #ffffff;
+    border: 1px solid #b6b6b6;
+    border-radius: 50px;
+    height: 46px;
+    width: 147px;
+    font-family: Nunitoregular;
+    font-size: 1rem;
+    line-height: 10px;
+}
+.hero-visit:hover{
+    background-color: #F2F3F4;
+    cursor: pointer;
+}
+
+@media (max-width: 990px) {
+    .header nav ul li a{
+        display: none;
+    }
+    .header-btn{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        font-size: 1.5rem;
+    }
+    .hero{
+        flex-direction: column;
+    }
+     .hero-text button {
+        margin: 10px 0;
+        width: 100%;
+    }
+     
+}
+@media (max-width: 380px){
+    .hero-img img{
+    max-width: 100%;
+    height: auto;
+    }
+}
+

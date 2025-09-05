@@ -16,12 +16,13 @@ body{
 }
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0rem 5rem;
     background-color: #F2F3F4;
     height: 72px;
-    position: sticky;
+    position: fixed;
+    width: 100%;
 }
 .header img{
     height: 35px;
@@ -68,6 +69,7 @@ body{
 .hero-text h1{
     font-family: Nunitobold;
     font-size: 2.5rem;
+    color: #1E1E1E;
 }
 .hero-text p{
     font-family: Nunitoregular;
@@ -105,6 +107,50 @@ body{
     cursor: pointer;
 }
 
+.droptext{
+    font-family: Nunitobold;
+    font-size: 2.5rem;
+    padding: 0rem 5rem;
+    margin-top: 80px;
+    color: #1E1E1E;
+}
+.dropshipping{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    gap: 8rem;
+}
+.dropshipping img{
+    max-width: 358px;
+    width: 100%;
+}
+.dropcontent h1{
+    font-family: Nunitobold;
+    font-size: 2rem;
+    color: #1E1E1E;
+}
+.dropcontent p{
+    font-family: Nunitoregular;
+    font-size: 1.3rem;
+    color: #757575;
+}
+.drop-btn{
+    background-color: #94ce5d;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 137px;
+    font-family: Nunitoregular;
+    font-size: 1rem;
+}
+.drop-btn:hover{
+    background-color: #a5df6f;
+    cursor: pointer;
+}
+
+
+
 @media (max-width: 990px) {
     .header nav ul li a{
         display: none;
@@ -125,7 +171,23 @@ body{
     }
      
 }
+
+@media (max-width: 576px){
+    .header{
+        width: 100%;
+        margin: 0px;
+    }
+    .hero-img img{
+    max-width: 100%;
+    height: auto;
+    }
+}
+
+
 @media (max-width: 380px){
+    .header{
+        width: auto;
+    }
     .hero-img img{
     max-width: 100%;
     height: auto;
